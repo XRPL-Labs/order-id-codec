@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/XRPL-Labs/order-id-codec/issues"
   },
-  "homepage": "https://github.com/XRPL-Labs/order-id-codec#readme"
+  "homepage": "https://github.com/XRPL-Labs/order-id-codec#readme",
+  "dependencies": {
+    "assert": "^2.0.0"
+  }
 }
