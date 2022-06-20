@@ -1,8 +1,9 @@
-const assert = require('assert')
 const chars = 'abcdehlkmrtwxyz'.toUpperCase()
 
 const to = decimal => {
-  assert(String(decimal || '').match(/^[0-9]+$/))
+  if (!String(decimal || '').match(/^[0-9]+$/)) {
+    throw new Error('Invalid input')
+  }
 
   let out = ''
   while (true) {
@@ -15,7 +16,9 @@ const to = decimal => {
 }
 
 const from = alpha => {
-  assert(typeof alpha === 'string')
+  if (typeof alpha !== 'string') {
+    throw new Error('Invalid input')
+  }
 
   const crs = chars.split('')
   const letters = alpha.split('')
