@@ -1,4 +1,4 @@
-const { to, from, check } = require('../index')
+const { to, from, check } = require('../../index')
 
 export async function onRequest(context) {
   // Contents of context object
