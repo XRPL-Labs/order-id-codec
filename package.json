@@ -1,0 +1,23 @@
+{
+  "name": "order-id-codec",
+  "version": "1.0.0",
+  "description": "Order ID codec to encode/decode numeric order ID to numeric + string as a checksum / decode fallback",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XRPL-Labs/order-id-codec.git"
+  },
+  "keywords": [
+    "order",
+    "codec"
+  ],
+  "author": "Wietse Wind <w@xrpl-labs.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/XRPL-Labs/order-id-codec/issues"
+  },
+  "homepage": "https://github.com/XRPL-Labs/order-id-codec#readme"
+}
