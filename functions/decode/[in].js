@@ -12,7 +12,10 @@ export async function onRequest(context) {
   } = context
   
   const res = new Response(JSON.stringify(check(params?.in)))
-  res.headers.set('X-Hello', 'Hello from XRPL Labs')
+
+  // res.headers.set('X-Hello', 'Hello from XRPL Labs')
+  res.headers.set('Content-Type', 'application/json;charset=UTF-8')
+  res.headers.set('Access-Control-Allow-Origin', '*')
 
   return res
 }
